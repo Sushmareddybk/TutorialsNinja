@@ -8,7 +8,12 @@
 
 	<test thread-count="1" name="Test">
 		<classes>
+			<class name="tutorialsNinjaTests.RegisterTest" />
 			<class name="tutorialsNinjaTests.LoginTest" />
+			<class name="tutorialsNinjaTests.AddProductToCartTest" />
+			<class name="tutorialsNinjaTests.ComparisionOfProductsTest" />
+			<class name="tutorialsNinjaTests.DeleteProductInWishListTest" />
+			
 			
 		</classes>
 	</test> <!-- Test -->
