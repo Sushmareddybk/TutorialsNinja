@@ -6,6 +6,9 @@ import org.apache.logging.log4j.Logger;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
+import com.aventstack.extentreports.model.Log;
+
 import tutorialsNinjaCommon.BaseTest;
 import tutorialsNinjaPages.AccountSuccessPage;
 import tutorialsNinjaPages.HeaderPage;
@@ -42,6 +45,7 @@ public class RegisterTest extends BaseTest  {
 			softAssert.assertEquals(actualResult1, expectedRes);
 		log.info("InvalidTestCase: Registration success message not matched with expected message");
 		softAssert.assertAll();
+		log.info("test is complete");
 	}
 
 }
