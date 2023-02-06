@@ -24,10 +24,7 @@ public class EditAccountInformationTest extends BaseTest{
 		softAssert.assertEquals(actualResult, expectedResult);
 		myAccount.clickOnEditYourAccountInformation();
 		String actualResult1 = editAccount.checkForUpdatedInfo();
-		if (actualResult1.contains(expectedResult1)) {
-			softAssert.assertEquals(actualResult1, expectedResult1);
-			softAssert.assertAll();
-		}else
-			System.out.println("Edited Info Is Not Updated");	  
+		softAssert.assertTrue(actualResult1.contains(expectedResult1));
+		softAssert.assertAll();
 	}
 }

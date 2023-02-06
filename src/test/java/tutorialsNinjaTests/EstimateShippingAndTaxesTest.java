@@ -26,8 +26,7 @@ public class EstimateShippingAndTaxesTest extends BaseTest{
 		checkOut.enterEstimateShippingTaxes();
 		checkOut.selectAndapplyShipping();
 		String actualResult = checkOut.getShippingEstimateAppliedSuccessMsg().trim();
-		if (actualResult.contains(expectedResult)) {
-			Assert.assertEquals(actualResult, expectedResult);
-		}
+		Assert.assertTrue(actualResult.contains(expectedResult));
 	}
 }
+

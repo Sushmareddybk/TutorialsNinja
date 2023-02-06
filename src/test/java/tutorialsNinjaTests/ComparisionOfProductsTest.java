@@ -34,7 +34,7 @@ public class ComparisionOfProductsTest extends BaseTest{
 		ProductComparePage compareProduct = productCategory.navigateToProductComparison();
 		String actualResult2 = compareProduct.nameOfProduct2();
 		compareProduct.priceofCanonEOS5D();
-		
+
 		if (actualResult2.contains(expectedResult2)) {
 			softAssert.assertEquals(actualResult2, expectedResult2);
 			System.out.println("Product2: Canon EOS 5D is added successfully to Product Comparision");
@@ -51,10 +51,7 @@ public class ComparisionOfProductsTest extends BaseTest{
 		}else {
 			softAssert.assertNotSame(actualResult, expectedResult1);
 			System.out.println("NIKON D300 ProductNotFound");
-	}
-	
-	
-	
+		}
 	}	
 }
 
