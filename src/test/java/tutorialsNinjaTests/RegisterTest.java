@@ -6,10 +6,8 @@ import org.apache.logging.log4j.Logger;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
-import com.aventstack.extentreports.model.Log;
-
 import tutorialsNinjaCommon.BaseTest;
+import tutorialsNinjaCommon.CommonUtils;
 import tutorialsNinjaPages.AccountSuccessPage;
 import tutorialsNinjaPages.HeaderPage;
 import tutorialsNinjaPages.RegisterAccountPage;
@@ -19,7 +17,7 @@ public class RegisterTest extends BaseTest  {
 	@DataProvider
 	public Object[][] RegisterData() {
 		return new Object[][] {
-			new Object[] {"benandholom@gmail.com", "09754456708", "Listeners", "Listeners", "valid"},
+			new Object[] {CommonUtils.generateRandomString()+"@gmail.com", CommonUtils.generateRandomInteger(), "Listeners", "Listeners", "valid"},
 			new Object[] {"sushmareddygmail.com", "0789654336", "sushmnbvc", "sushmnbvc", "inValid"},
 		};
 	}

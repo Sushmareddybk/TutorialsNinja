@@ -12,8 +12,11 @@ public class NewsLetterSubscriptionTest extends BaseTest{
   @Test
   public void verifySubscribeToNewsLetterFunctionality() {
 	  String expectedResult = "Success: Your newsletter subscription has been successfully updated!";
+	 
 	  HeaderPage header = new HeaderPage(driver);
+	  test.info("click On MyAccount And Select Login");
 	  LoginPage login = header.clickOnMyAccountSelectLogin(); 
+	  test.pass("Navigated Successfully To Login Page");
 	  MyAccountPage myAccount = login.enterLoginCredentialsAndClickOnLogin("sushmareddy@gmail.com", "Testing");
 	  NewsLetterPage newsLetter = myAccount.clickOnSubscribeUnsubscribeToNewsletter();
 	  newsLetter.clickYesToSubscribeAndContinue();
