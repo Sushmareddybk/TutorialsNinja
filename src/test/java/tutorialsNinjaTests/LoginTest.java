@@ -21,15 +21,19 @@ public class LoginTest extends BaseTest  {
 	public void verifyLoginFunctionality(String email, String password, String validOrInvalid) {
 		String expectedResult = "Edit your account information";
 		String expectedRes = "http://tutorialsninja.com/demo/index.php?route=account/login";
+		test=report.createTest("verifyLoginTest");
 		HeaderPage headerPage = new HeaderPage(driver);
+		test.info("Click On MyAccount And Select Login");
 		LoginPage loginPage = headerPage.clickOnMyAccountSelectLogin(); 
+		test.pass("Navigated Sucessfully To Login Page");
 		MyAccountPage myAccountPage = loginPage.enterLoginCredentialsAndClickOnLogin(email, password);
 		SoftAssert softAssert = new SoftAssert();
 		if (validOrInvalid.equalsIgnoreCase("valid")) {
 			String actualResult = myAccountPage.getEditAccountInfoText();
 			softAssert.assertEquals(actualResult, expectedResult);
 
-		}else {
+		}
+		else {
 			String actualResult1 = loginPage.getLoginPageUrl();
 			softAssert.assertEquals(actualResult1, expectedRes);
 			softAssert.assertAll();

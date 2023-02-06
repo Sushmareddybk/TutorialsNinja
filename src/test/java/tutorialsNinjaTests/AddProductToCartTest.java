@@ -27,10 +27,8 @@ public class AddProductToCartTest extends BaseTest{
 		softAssert.assertTrue(actualResult.contains(expectedResult));
 		CheckOutCartPage checkOut = header.clickOnShoppingCartLink();
 		String actualResult1 = checkOut.checkForProductInShoppingCart();
-		if (actualResult1.contains(expectedResult1)) {
-			softAssert.assertEquals(actualResult1, expectedResult1);
-			softAssert.assertAll();
-		}else
-			System.out.println("Product Is Not Added To Successfully To Cart");
+		softAssert.assertEquals(actualResult1, expectedResult1);
+		softAssert.assertAll();
+
 	}
 }

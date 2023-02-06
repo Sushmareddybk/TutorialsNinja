@@ -39,6 +39,7 @@ public class ComparisionOfProductsTest extends BaseTest{
 			softAssert.assertEquals(actualResult2, expectedResult2);
 			System.out.println("Product2: Canon EOS 5D is added successfully to Product Comparision");
 		}else {
+			softAssert.assertNotSame(actualResult2, expectedResult2);
 			System.out.println("Canon EOS 5D ProductNotFound");
 		}
 		myAccount.clickToNavigateCamerasLink();
@@ -47,13 +48,14 @@ public class ComparisionOfProductsTest extends BaseTest{
 		if (actualResult.contains(expectedResult)) {
 			softAssert.assertEquals(actualResult, expectedResult1);
 			System.out.println("Product2: NIKON D300 is added successfully to Product Comparision");
-		}else
+		}else {
+			softAssert.assertNotSame(actualResult, expectedResult1);
 			System.out.println("NIKON D300 ProductNotFound");
 	}
 	
 	
 	
-	
+	}	
 }
 
 
