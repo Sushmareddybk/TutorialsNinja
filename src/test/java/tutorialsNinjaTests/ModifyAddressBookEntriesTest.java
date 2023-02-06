@@ -25,10 +25,7 @@ public class ModifyAddressBookEntriesTest extends BaseTest {
 		String actualResult = address.getSuccessfullyAddedAddressMsg();
 		softAssert.assertEquals(actualResult, expectedResult); 
 		String actualResult1 = address.getAddressBookEntries();
-		if (actualResult1.contentEquals(expectedResult1)) {
-			softAssert.assertEquals(actualResult1, expectedResult1);
-			softAssert.assertAll();
-		}else
-			System.out.println("Address Not Found In Address Book");
+		softAssert.assertTrue(actualResult1.contains(expectedResult1));
+		softAssert.assertAll();
 	}
 }

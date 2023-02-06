@@ -31,7 +31,6 @@ public class LoginTest extends BaseTest  {
 		if (validOrInvalid.equalsIgnoreCase("valid")) {
 			String actualResult = myAccountPage.getEditAccountInfoText();
 			softAssert.assertEquals(actualResult, expectedResult);
-
 		}
 		else {
 			String actualResult1 = loginPage.getLoginPageUrl();

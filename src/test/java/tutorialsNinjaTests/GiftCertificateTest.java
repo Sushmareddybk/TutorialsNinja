@@ -34,11 +34,9 @@ public class GiftCertificateTest extends BaseTest{
 		softAssert.assertEquals(actualResult, expectedResult);
 		CheckOutCartPage checkOut = voucherSuccess.clickContinueToCheckOut();
 		String actualResult1 = checkOut.checkForGiftCertificate();
-		if (actualResult1.contentEquals(expectedResult1)) {
-			softAssert.assertEquals(actualResult1, expectedResult1);
-			softAssert.assertAll();
-		}else
-			System.out.println("Gift Certificate Not Found");
+		softAssert.assertEquals(actualResult1, expectedResult1);
+		softAssert.assertAll();
+		System.out.println("Gift Certificate Not Found");
 	}
 	@Test(dataProvider = "GiftCertificateData")
 	public void giftCertificateWithOutNonRefundableTerms(String email, String password) {

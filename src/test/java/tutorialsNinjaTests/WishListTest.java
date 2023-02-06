@@ -25,10 +25,7 @@ public class WishListTest extends BaseTest{
 		softAssert.assertTrue(actualResults.contains(expectedResult));
 		header.clickOnWishListLink();
 		String actualResult1 = wishList.getProductDetailsFromWishList();
-		if (actualResult1.contentEquals(expectedResult1)) {
-			softAssert.assertEquals(actualResult1, expectedResult1);
-			softAssert.assertAll();
-		}else 
-			System.out.println("Product is not added to WishList");	  
+		softAssert.assertEquals(actualResult1, expectedResult1);
+		softAssert.assertAll();  
 	}
 }
