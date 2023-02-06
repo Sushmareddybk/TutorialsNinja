@@ -36,7 +36,7 @@ public class CommonUtils {
 		TakesScreenshot screenshot = ((TakesScreenshot)driver);
 	
 		File sourceScreenshot = screenshot.getScreenshotAs(OutputType.FILE);
-		String destinationPath = System.getProperty("user.dir") + "/Screenshots/" + testName + ".png";
+		String destinationPath = System.getProperty("user.dir") +File.pathSeparator+ "Screenshots" +File.pathSeparator+ testName + ".png";
 		File destinationScreenshot = new File(destinationPath);
 		try {
 			FileUtils.copyFile(sourceScreenshot,destinationScreenshot);
