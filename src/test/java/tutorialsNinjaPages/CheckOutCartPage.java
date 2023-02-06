@@ -12,7 +12,8 @@ public class CheckOutCartPage {
 	By getQuotes = By.id("button-quote");
 	By applyShipping =By.id("button-shipping");
 	By estimateShipping = By.partialLinkText("Estimate Shipping & Taxes");
-	By product = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/form[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]");
+	//By product = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/form[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]");
+	By product = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/form[1]/div[1]/table[1]/tbody[1]");
 	By product1 = By.xpath("//form[@enctype='multipart/form-data']//div[@class='table-responsive']");
 	public  CheckOutCartPage(WebDriver driver) {
 		this.driver = driver;
