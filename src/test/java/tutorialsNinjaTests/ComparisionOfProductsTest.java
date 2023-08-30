@@ -50,7 +50,7 @@ public class ComparisionOfProductsTest extends BaseTest{
 			System.out.println("Product2: NIKON D300 is added successfully to Product Comparision");
 		}else {
 			softAssert.assertNotSame(actualResult, expectedResult1);
-			System.out.println("NIKON D300 ProductNotFound");
+			System.out.println("NIKON D300 ProductNotFound"); //print
 		}
 	}	
 }

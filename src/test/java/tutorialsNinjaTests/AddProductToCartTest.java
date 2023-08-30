@@ -13,7 +13,7 @@ import tutorialsNinjaPages.WishListPage;
 public class AddProductToCartTest extends BaseTest{
 	@Test
 	public void verifyAddToCartFunctionalityFromWishList() {
-		String expectedResult = "Success: You have added"; 
+		String expectedResult = "Success:You have added"; 
 		String expectedResult1 = "iPhone";
 		HeaderPage header = new HeaderPage(driver);
 		LoginPage login = header.clickOnMyAccountSelectLogin();
@@ -28,6 +28,6 @@ public class AddProductToCartTest extends BaseTest{
 		CheckOutCartPage checkOut = header.clickOnShoppingCartLink();
 		String actualResult1 = checkOut.checkForProductInShoppingCart();
 		softAssert.assertTrue(actualResult1.contains(expectedResult1));
-		softAssert.assertAll();
+		softAssert.assertAll(); //asserting all
 	}
 }
