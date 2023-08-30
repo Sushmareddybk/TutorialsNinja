@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-30T21:23:37 CEST" name="Default suite" finished-at="2023-08-30T21:23:37 CEST" duration-ms="122">
+  <suite started-at="2023-08-30T22:27:58 CEST" name="Default suite" finished-at="2023-08-30T22:27:58 CEST" duration-ms="122">
     <groups>
     </groups>
-    <test started-at="2023-08-30T21:23:37 CEST" name="Default test" finished-at="2023-08-30T21:23:37 CEST" duration-ms="122">
-      <class name="tutorialsNinjaTests.LoginTest">
-        <test-method is-config="true" signature="extentReport()[pri:0, instance:tutorialsNinjaTests.LoginTest@1ed6388a]" started-at="2023-08-30T21:23:37 CEST" name="extentReport" finished-at="2023-08-30T21:23:37 CEST" duration-ms="454" status="PASS">
+    <test started-at="2023-08-30T22:27:58 CEST" name="Default test" finished-at="2023-08-30T22:27:58 CEST" duration-ms="122">
+      <class name="tutorialsNinjaTests.AddProductToCartTest">
+        <test-method is-config="true" signature="extentReport()[pri:0, instance:tutorialsNinjaTests.AddProductToCartTest@7d4f9aae]" started-at="2023-08-30T22:27:57 CEST" name="extentReport" finished-at="2023-08-30T22:27:58 CEST" duration-ms="662" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReport -->
-        <test-method is-config="true" signature="launchBrowserAndOpenUrl(org.testng.ITestResult,java.lang.String)[pri:0, instance:tutorialsNinjaTests.LoginTest@1ed6388a]" started-at="2023-08-30T21:23:37 CEST" name="launchBrowserAndOpenUrl" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1693423417549" status="FAIL">
+        <test-method is-config="true" signature="launchBrowserAndOpenUrl(org.testng.ITestResult,java.lang.String)[pri:0, instance:tutorialsNinjaTests.AddProductToCartTest@7d4f9aae]" started-at="2023-08-30T22:27:58 CEST" name="launchBrowserAndOpenUrl" finished-at="1970-01-01T01:00:00 CET" duration-ms="-1693427278692" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'URL' is required by BeforeMethod on method launchBrowserAndOpenUrl but has not been marked @Optional or defined
-in C:\Users\46704\AppData\Local\Temp\testng-eclipse-472420499\testng-customsuite.xml]]>
+in C:\Users\46704\AppData\Local\Temp\testng-eclipse-240395763\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'URL' is required by BeforeMethod on method launchBrowserAndOpenUrl but has not been marked @Optional or defined
-in C:\Users\46704\AppData\Local\Temp\testng-eclipse-472420499\testng-customsuite.xml
+in C:\Users\46704\AppData\Local\Temp\testng-eclipse-240395763\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:267)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
 at org.testng.internal.Parameters.createParameters(Parameters.java:684)
 at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
 at org.testng.SuiteRunner.run(SuiteRunner.java:330)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
@@ -57,53 +57,36 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowserAndOpenUrl -->
-        <test-method signature="verifyLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tutorialsNinjaTests.LoginTest@1ed6388a]" started-at="2023-08-30T21:23:37 CEST" name="verifyLoginFunctionality" data-provider="loginData" finished-at="2023-08-30T21:23:37 CEST" duration-ms="1" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sushmareddy@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Testing]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[valid]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="verifyAddToCartFunctionalityFromWishList()[pri:0, instance:tutorialsNinjaTests.AddProductToCartTest@7d4f9aae]" started-at="2023-08-30T22:27:58 CEST" name="verifyAddToCartFunctionalityFromWishList" finished-at="2023-08-30T22:27:58 CEST" duration-ms="0" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'URL' is required by BeforeMethod on method launchBrowserAndOpenUrl but has not been marked @Optional or defined
-in C:\Users\46704\AppData\Local\Temp\testng-eclipse-472420499\testng-customsuite.xml]]>
+in C:\Users\46704\AppData\Local\Temp\testng-eclipse-240395763\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'URL' is required by BeforeMethod on method launchBrowserAndOpenUrl but has not been marked @Optional or defined
-in C:\Users\46704\AppData\Local\Temp\testng-eclipse-472420499\testng-customsuite.xml
+in C:\Users\46704\AppData\Local\Temp\testng-eclipse-240395763\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:267)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
 at org.testng.internal.Parameters.createParameters(Parameters.java:684)
 at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
 at org.testng.SuiteRunner.run(SuiteRunner.java:330)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
@@ -119,87 +102,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginFunctionality -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:tutorialsNinjaTests.LoginTest@1ed6388a]" started-at="2023-08-30T21:23:37 CEST" name="closeBrowser" finished-at="2023-08-30T21:23:37 CEST" duration-ms="0" status="SKIP">
+        </test-method> <!-- verifyAddToCartFunctionalityFromWishList -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:tutorialsNinjaTests.AddProductToCartTest@7d4f9aae]" started-at="2023-08-30T22:27:58 CEST" name="closeBrowser" finished-at="2023-08-30T22:27:58 CEST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchBrowserAndOpenUrl(org.testng.ITestResult,java.lang.String)[pri:0, instance:tutorialsNinjaTests.LoginTest@1ed6388a]" started-at="2023-08-30T21:23:37 CEST" name="launchBrowserAndOpenUrl" finished-at="2023-08-30T21:23:37 CEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowserAndOpenUrl -->
-        <test-method signature="verifyLoginFunctionality(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tutorialsNinjaTests.LoginTest@1ed6388a]" started-at="2023-08-30T21:23:37 CEST" name="verifyLoginFunctionality" data-provider="loginData" finished-at="2023-08-30T21:23:37 CEST" duration-ms="2" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sushmareddy]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Testing]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[inValid]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'URL' is required by BeforeMethod on method launchBrowserAndOpenUrl but has not been marked @Optional or defined
-in C:\Users\46704\AppData\Local\Temp\testng-eclipse-472420499\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'URL' is required by BeforeMethod on method launchBrowserAndOpenUrl but has not been marked @Optional or defined
-in C:\Users\46704\AppData\Local\Temp\testng-eclipse-472420499\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:816)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginFunctionality -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:tutorialsNinjaTests.LoginTest@1ed6388a]" started-at="2023-08-30T21:23:37 CEST" name="closeBrowser" finished-at="2023-08-30T21:23:37 CEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="onFinish()[pri:0, instance:tutorialsNinjaTests.LoginTest@1ed6388a]" started-at="2023-08-30T21:23:37 CEST" name="onFinish" finished-at="2023-08-30T21:23:38 CEST" duration-ms="440" status="PASS">
+        <test-method is-config="true" signature="onFinish()[pri:0, instance:tutorialsNinjaTests.AddProductToCartTest@7d4f9aae]" started-at="2023-08-30T22:27:58 CEST" name="onFinish" finished-at="2023-08-30T22:27:59 CEST" duration-ms="753" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onFinish -->
-      </class> <!-- tutorialsNinjaTests.LoginTest -->
+      </class> <!-- tutorialsNinjaTests.AddProductToCartTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

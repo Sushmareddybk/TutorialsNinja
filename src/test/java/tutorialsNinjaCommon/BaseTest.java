@@ -2,6 +2,7 @@ package tutorialsNinjaCommon;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -46,7 +47,7 @@ public class BaseTest {
 	}
 	@Parameters ("URL")
 	@BeforeMethod
-	public void launchBrowserAndOpenUrl(ITestResult result, String url) throws MalformedURLException {
+	public void launchBrowserAndOpenUrl(@Optional ("http://tutorialsninja.com/demo/index.php?route=common/home") ITestResult result, String url) throws MalformedURLException {
 		DesiredCapabilities cap = null;
 		String browse = ReadProperties.readValues("browser");
 		if(browse.equalsIgnoreCase("chrome")) {

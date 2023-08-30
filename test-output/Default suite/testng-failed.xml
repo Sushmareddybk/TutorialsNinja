@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tutorialsNinjaTests.LoginTest">
+      <class name="tutorialsNinjaTests.AddProductToCartTest">
         <methods>
           <include name="closeBrowser"/>
-          <include name="verifyLoginFunctionality"/>
+          <include name="verifyAddToCartFunctionalityFromWishList"/>
           <include name="onFinish"/>
           <include name="extentReport"/>
           <include name="launchBrowserAndOpenUrl"/>
         </methods>
-      </class> <!-- tutorialsNinjaTests.LoginTest -->
+      </class> <!-- tutorialsNinjaTests.AddProductToCartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
