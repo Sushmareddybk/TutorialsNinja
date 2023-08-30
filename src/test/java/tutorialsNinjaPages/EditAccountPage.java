@@ -7,7 +7,7 @@ public class EditAccountPage {
 	WebDriver driver;
 	By firstNameInPersonalDetails = By.xpath("//div[@id='content']//form //input");
 	By lastNameInPersonalDetails = By.id("input-lastname");
-	By submitButton = By.xpath("//input[@type='submit']");
+	By submitButton = By.xpath("//input[@type='submit']"); //
 	By updatedFirstName = By.xpath("//div[@id='content']//form");
 	public EditAccountPage(WebDriver driver) {
 		this.driver = driver;

@@ -45,7 +45,7 @@ public class BaseTest {
 		htmlReport.config().setReportName("TutorialsNinjaTestResultReports");
 		htmlReport.config().setTimeStampFormat("dd/mm/yyyy-hh:mm:ss");
 	}
-	@Parameters ("URL")
+	@Parameters ("URL") //parameters
 	@BeforeMethod
 	public void launchBrowserAndOpenUrl(@Optional ("http://tutorialsninja.com/demo/index.php?route=common/home") ITestResult result, String url) throws MalformedURLException {
 		DesiredCapabilities cap = null;

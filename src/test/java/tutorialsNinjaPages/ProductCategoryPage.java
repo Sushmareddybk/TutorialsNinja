@@ -15,7 +15,7 @@ public class ProductCategoryPage {
 	}
 	public String addToCompareProduct2() {
 		String productModel1 = driver.findElement(product1).getText();
-		if (productModel1.contains("Canon EOS 5D")) {
+		if (productModel1.contains("Canon EOS 5D")) {  //
 			driver.findElement(compareButton).click();
 			return driver.findElement(alertSuccess).getText();
 		}else

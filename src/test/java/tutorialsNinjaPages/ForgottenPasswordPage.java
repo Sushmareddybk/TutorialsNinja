@@ -16,7 +16,7 @@ public class ForgottenPasswordPage {
 		driver.findElement(inputEmail).sendKeys(email);
 		driver.findElement(submitButton).click();
 	}
-	public String displayingAlertSuccessMessage() {
+	public String displayingAlertSuccessMessage() {   //
 		String alertSuccessMessage = driver.findElement(successMsg).getText();
 		return alertSuccessMessage;	
 	}

@@ -44,6 +44,6 @@ public class WishListPage {
 		return driver.findElement(wishListIsEmpty).getText();
 	}
 	public Dimension getSizeOfWishList() {
-		return driver.findElement(sizeOfWishList).getSize(); //get the size
+		return driver.findElement(sizeOfWishList).getSize(); //get size
 	}
 }

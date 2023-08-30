@@ -23,7 +23,7 @@ public class CommonUtils {
 	}
 	
 	public static String generateRandomInteger() {
-		String generateString = "0123456789";
+		String generateString = "0123456789"; //double codes will take as string
 		String randamString = "";
 		for (int i=0; i<10; i++) {
 			new Random().nextInt(10);

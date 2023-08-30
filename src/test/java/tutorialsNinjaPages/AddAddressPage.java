@@ -8,7 +8,7 @@ import tutorialsNinjaCommon.CommonUtils;
 
 public class AddAddressPage {
 	WebDriver driver;
-	By firstName = By.name("firstname");
+	By firstName = By.name("firstname"); //enters detail
 	By lastName = By.name("lastname");
 	By address1 = By.name("address_1");
 	By cityName = By.name("city");

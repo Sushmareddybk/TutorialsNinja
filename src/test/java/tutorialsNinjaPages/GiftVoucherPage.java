@@ -18,7 +18,7 @@ public class GiftVoucherPage {
 	}
 	public VoucherSuccessMsgPage enterGiftCertificateDetails() {
 		driver.findElement(name).sendKeys("ben");
-		driver.findElement(email).sendKeys("ben@gmail.com");
+		driver.findElement(email).sendKeys("ben@gmail.com");  //
 		driver.findElement(birthdayType).click();
 		driver.findElement(message).sendKeys("HappyBirthday Ben");
 		driver.findElement(terms).click();

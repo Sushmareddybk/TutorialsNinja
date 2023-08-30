@@ -14,7 +14,7 @@ public class ProductComparePage {
 		return driver.findElement(product1Name).getText();	
 	}
 	public String nameOfProduct2() {
-		return driver.findElement(product2Name).getText();
+		return driver.findElement(product2Name).getText(); //
 	}
 	public String priceofCanonEOS5D() {
 		return driver.findElement(By.xpath("//td//strike[1]")).getText();

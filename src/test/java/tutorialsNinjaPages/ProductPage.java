@@ -10,6 +10,6 @@ public class ProductPage {
 		this.driver = driver;
 	}
 	public void clickToaddProductToWishList() {
-		driver.findElement(addToWishList).click();
+		driver.findElement(addToWishList).click(); //
 	}
 }

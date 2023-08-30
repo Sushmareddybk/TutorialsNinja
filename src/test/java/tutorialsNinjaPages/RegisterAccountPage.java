@@ -14,7 +14,7 @@ public class RegisterAccountPage {
 	By passwordField = By.name("password");
 	By confirmPasswordField = By.name("confirm");
 	By agreeTermsCheckBox = By.name("agree");
-	By submitButton = By.xpath("//input[@type='submit']");	
+	By submitButton = By.xpath("//input[@type='submit']");	//
 	public RegisterAccountPage(WebDriver driver) {
 		this.driver = driver;
 	}

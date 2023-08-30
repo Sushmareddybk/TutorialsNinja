@@ -14,7 +14,7 @@ public class HeaderPage {
 		this.driver=driver;
 	}
 	public RegisterAccountPage clickOnMyAccountSelectResigter() {
-		driver.findElement(myAccountLink).click();
+		driver.findElement(myAccountLink).click();  //
 		driver.findElement(registerLink).click();
 		return new RegisterAccountPage(driver);	
 	}

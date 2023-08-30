@@ -16,7 +16,7 @@ public class MyAccountPage {
 	By giftCertificatesLink = By.partialLinkText("Gift Certificates");
 	By editAccount = By.partialLinkText("Edit Account");
 	By camerasLink = By.xpath("//ul[@class='nav navbar-nav']//li[7]");
-	public MyAccountPage(WebDriver driver) {
+	public MyAccountPage(WebDriver driver) {//
 		this.driver = driver;
 	}
 	public String getEditAccountInfoText() {

@@ -15,7 +15,7 @@ public class LoginPage {
 	}
 	public MyAccountPage enterLoginCredentialsAndClickOnLogin(String email, String password) {
 		driver.findElement(enterEmail).sendKeys(email);
-		driver.findElement(enterPassword).sendKeys(password);
+		driver.findElement(enterPassword).sendKeys(password); //
 		driver.findElement(loginButton).click();
 		return new MyAccountPage(driver);
 	}

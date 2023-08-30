@@ -11,7 +11,7 @@ public class NewsLetterPage {
 		this.driver = driver;
 	}
 	public MyAccountPage clickYesToSubscribeAndContinue() {
-		driver.findElement(subscribe).click();
+		driver.findElement(subscribe).click(); //
 		driver.findElement(continueButton).click();
 		return new MyAccountPage(driver);
 	}

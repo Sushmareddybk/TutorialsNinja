@@ -11,6 +11,6 @@ public class AccountSuccessPage {
 	}
 	public String getAccountRegisterSuccessMsg() {
 		String registerSuccessMsg = driver.findElement(registerAccountSuccessMsg).getText();
-		return registerSuccessMsg;
+		return registerSuccessMsg; //success msg
 	}
 }

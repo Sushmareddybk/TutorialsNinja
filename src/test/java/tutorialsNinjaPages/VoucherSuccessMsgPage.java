@@ -11,7 +11,7 @@ public class VoucherSuccessMsgPage {
 		this.driver = driver;
 	}
 	public  String getPurchasingGiftCertificateSuccessMsg() {
-		return driver.findElement(giftCertificateMsg).getText();
+		return driver.findElement(giftCertificateMsg).getText();//
 	}
 	public CheckOutCartPage clickContinueToCheckOut() {
 		driver.findElement(checkOutLink).click();

@@ -15,7 +15,7 @@ public class SearchProductPage {
 	public WishListPage addProductToWishList() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,450)", "");
-		driver.findElement(addToWishListButton).click();
+		driver.findElement(addToWishListButton).click();//
 		return new WishListPage(driver);
 	}
 	public String getAddToWishListSucsessMessage() {

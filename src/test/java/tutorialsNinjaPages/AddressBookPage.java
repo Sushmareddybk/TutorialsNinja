@@ -9,7 +9,7 @@ public class AddressBookPage {
 	WebDriver driver;
 	By entriesFromAddressBook =By.xpath("//div[@class='table-responsive']");
 	By newAddress = By.partialLinkText("New Address");
-	By addressAddedMsg = By.className("alert-success");
+	By addressAddedMsg = By.className("alert-success"); //
 	public AddressBookPage(WebDriver driver) {
 		this.driver = driver;	
 	}
@@ -20,7 +20,7 @@ public class AddressBookPage {
 	}
 	public AddAddressPage clickOnNewAddress() {
 		driver.findElement(newAddress).click();
-		return new AddAddressPage(driver);
+		return new AddAddressPage(driver); 
 	}
 	public String getSuccessfullyAddedAddressMsg() {
 		return driver.findElement(addressAddedMsg).getText();

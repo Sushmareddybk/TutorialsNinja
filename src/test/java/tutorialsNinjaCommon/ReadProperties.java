@@ -15,7 +15,7 @@ public class ReadProperties  {
 		}
 		catch (Exception e) {
 			e.printStackTrace();
-			return null;
+			return null; //it returns null
 		}
 	}
 }
