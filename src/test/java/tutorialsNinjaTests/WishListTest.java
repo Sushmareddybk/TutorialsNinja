@@ -19,7 +19,7 @@ public class WishListTest extends BaseTest{
 		LoginPage login = header.clickOnMyAccountSelectLogin();
 		MyAccountPage myAccount = login.enterLoginCredentialsAndClickOnLogin("sushmareddy@gmail.com", "Testing");
 		SearchProductPage searchProduct = myAccount.searchForProductInSearchFilter("iphone");
-		WishListPage wishList = searchProduct.addProductToWishList();
+		WishListPage wishList = searchProduct.addProductToWishList();//
 		String actualResults = searchProduct.getAddToWishListSucsessMessage();
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertTrue(actualResults.contains(expectedResult));

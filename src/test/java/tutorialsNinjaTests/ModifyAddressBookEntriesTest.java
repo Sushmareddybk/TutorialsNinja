@@ -21,7 +21,7 @@ public class ModifyAddressBookEntriesTest extends BaseTest {
 		AddressBookPage address = myAccount.clickOnModifyAddressBookEntries();
 		AddAddressPage addAddress = address.clickOnNewAddress();
 		addAddress.addAddressAndClickOnContinue(expectedResult1,"chuchuTv1","98765");
-		SoftAssert softAssert = new SoftAssert();
+		SoftAssert softAssert = new SoftAssert();//
 		String actualResult = address.getSuccessfullyAddedAddressMsg();
 		softAssert.assertEquals(actualResult, expectedResult); 
 		String actualResult1 = address.getAddressBookEntries();

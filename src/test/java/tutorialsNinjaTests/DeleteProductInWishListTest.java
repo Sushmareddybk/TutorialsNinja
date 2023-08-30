@@ -26,7 +26,7 @@ public class DeleteProductInWishListTest extends BaseTest {
 		SoftAssert softAssert = new SoftAssert();
 		String actualResult = wishList.getDeleteProductSuccessMsg();
 		softAssert.assertTrue(actualResult.contains(expectedResult));
-		Dimension sizeOfWishListAfterProductRemoval = wishList.getSizeOfWishList();
+		Dimension sizeOfWishListAfterProductRemoval = wishList.getSizeOfWishList();//
 		System.out.println("Size of wishlist after DeletingProduct:" + sizeOfWishListAfterProductRemoval);
 		softAssert.assertTrue(sizeOfWishListAfterProductRemoval.getWidth() < sizeOfWishList.getWidth() || sizeOfWishListAfterProductRemoval.getHeight() < sizeOfWishList.getHeight());
 		softAssert.assertAll();

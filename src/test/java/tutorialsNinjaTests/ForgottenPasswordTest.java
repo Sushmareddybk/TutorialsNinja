@@ -23,7 +23,7 @@ public class ForgottenPasswordTest extends BaseTest {
 		HeaderPage headerPage = new HeaderPage(driver);
 		LoginPage loginPage = headerPage.clickOnMyAccountSelectLogin();			
 		ForgottenPasswordPage frgtPswdPage = loginPage.clickOnForgottenPasswordInRightColumn();
-		frgtPswdPage.enterEmailAndClickContinue(email);
+		frgtPswdPage.enterEmailAndClickContinue(email);//
 		if (validOrInValid.equalsIgnoreCase("valid")) {
 			String actualResult = frgtPswdPage.displayingAlertSuccessMessage();	 		
 			Assert.assertEquals(actualResult, expectedResult);

@@ -20,7 +20,7 @@ public class EstimateShippingAndTaxesTest extends BaseTest{
 		MyAccountPage myAccount = login.enterLoginCredentialsAndClickOnLogin("sushmareddy@gmail.com", "Testing");
 		SearchProductPage searchProduct  = myAccount.searchForProductInSearchFilter("iphone");
 		WishListPage wishList = searchProduct.addProductToWishList();
-		header.clickOnWishListLink();
+		header.clickOnWishListLink();//
 		wishList.clickOnAddToCartButton();
 		CheckOutCartPage checkOut = header.clickOnShoppingCartLink();
 		checkOut.enterEstimateShippingTaxes();

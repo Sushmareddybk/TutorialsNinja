@@ -28,7 +28,7 @@ public class RegisterTest extends BaseTest  {
 		String expectedRes = "http://tutorialsninja.com/demo/index.php?route=account/register";
 		HeaderPage headerPage  = new HeaderPage(driver);
 		log.info("Click on My Account link to navigate to registration page");
-		RegisterAccountPage registerAccountPage = headerPage.clickOnMyAccountSelectResigter();	 
+		RegisterAccountPage registerAccountPage = headerPage.clickOnMyAccountSelectResigter();//	 
 		log.info("Enter personal details and click on submit button");
 		AccountSuccessPage accountRegisterSuccessMsg = registerAccountPage.enterPersonalDetailsAndClickSubmit(email, telephoneNum, password, confirmPassword);
 		log.info("Get account register success message");

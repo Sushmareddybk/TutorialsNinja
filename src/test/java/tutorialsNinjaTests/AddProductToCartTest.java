@@ -18,7 +18,7 @@ public class AddProductToCartTest extends BaseTest{
 		HeaderPage header = new HeaderPage(driver);
 		LoginPage login = header.clickOnMyAccountSelectLogin();
 		MyAccountPage myAccount = login.enterLoginCredentialsAndClickOnLogin("sushmareddy@gmail.com", "Testing");
-		SearchProductPage searchProduct  = myAccount.searchForProductInSearchFilter("iphone");
+		SearchProductPage searchProduct  = myAccount.searchForProductInSearchFilter("iphone"); //
 		WishListPage wishList = searchProduct.addProductToWishList();
 		header.clickOnWishListLink();
 		wishList.clickOnAddToCartButton();

@@ -26,7 +26,7 @@ public class GiftCertificateTest extends BaseTest{
 		HeaderPage header = new HeaderPage(driver);
 		LoginPage login = header.clickOnMyAccountSelectLogin(); 
 		MyAccountPage myAccount = login.enterLoginCredentialsAndClickOnLogin(email, password);
-		GiftVoucherPage giftVoucher = myAccount.clickOnGiftCertificatesLink();
+		GiftVoucherPage giftVoucher = myAccount.clickOnGiftCertificatesLink();//
 		giftVoucher.enterGiftCertificateDetails();
 		VoucherSuccessMsgPage voucherSuccess = giftVoucher.clickToNavigateVoucherSuccessPage();
 		String actualResult = voucherSuccess.getPurchasingGiftCertificateSuccessMsg();

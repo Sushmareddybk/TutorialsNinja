@@ -18,7 +18,7 @@ public class NewsLetterSubscriptionTest extends BaseTest{
 	  LoginPage login = header.clickOnMyAccountSelectLogin(); 
 	  test.pass("Navigated Successfully To Login Page");
 	  MyAccountPage myAccount = login.enterLoginCredentialsAndClickOnLogin("sushmareddy@gmail.com", "Testing");
-	  NewsLetterPage newsLetter = myAccount.clickOnSubscribeUnsubscribeToNewsletter();
+	  NewsLetterPage newsLetter = myAccount.clickOnSubscribeUnsubscribeToNewsletter();//
 	  newsLetter.clickYesToSubscribeAndContinue();
 	  String actualResult = myAccount.getSubscriptionSuccessMsg();
 	  Assert.assertEquals(actualResult, expectedResult);

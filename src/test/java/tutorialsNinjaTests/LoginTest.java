@@ -24,7 +24,7 @@ public class LoginTest extends BaseTest  {
 		test=report.createTest("verifyLoginTest");
 		HeaderPage headerPage = new HeaderPage(driver);
 		test.info("Click On MyAccount And Select Login");
-		LoginPage loginPage = headerPage.clickOnMyAccountSelectLogin(); 
+		LoginPage loginPage = headerPage.clickOnMyAccountSelectLogin(); //
 		test.pass("Navigated Sucessfully To Login Page");
 		MyAccountPage myAccountPage = loginPage.enterLoginCredentialsAndClickOnLogin(email, password);
 		SoftAssert softAssert = new SoftAssert();

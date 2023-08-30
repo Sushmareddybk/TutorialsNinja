@@ -12,7 +12,7 @@ import tutorialsNinjaPages.MyAccountPage;
 public class EditAccountInformationTest extends BaseTest{
 	@Test
 	public void verifyEditAccountInfoForValidCase() {
-		String expectedResult = "Success: Your account has been successfully updated.";  
+		String expectedResult = "Success: Your account has been successfully updated.";//  
 		String expectedResult1 = "chuchu";
 		HeaderPage header = new HeaderPage(driver);
 		LoginPage login = header.clickOnMyAccountSelectLogin();
