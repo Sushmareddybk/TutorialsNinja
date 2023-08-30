@@ -6,15 +6,22 @@
 <listener class-name="tutorialsNinjaCommon.ExtentReport"></listener>
 </listeners>
 
-	<test thread-count="1" name="Test">
+	<test thread-count="3" name="Test">
 		<classes>
-			<class name="tutorialsNinjaTests.RegisterTest" />
-			<class name="tutorialsNinjaTests.LoginTest" />
-			<class name="tutorialsNinjaTests.AddProductToCartTest" />
-			<class name="tutorialsNinjaTests.ComparisionOfProductsTest" />
 			<class name="tutorialsNinjaTests.DeleteProductInWishListTest" />
-			
-			
+			<class name="tutorialsNinjaTests.EditAccountInformationTest" />
+			<class name="tutorialsNinjaTests.EstimateShippingAndTaxesTest" />
+			<class name="tutorialsNinjaTests.ForgottenPasswordTest" />
+			<class name="tutorialsNinjaTests.GiftCertificateTest" />
+			<class name="tutorialsNinjaTests.LoginTest" />
+			<class name="tutorialsNinjaTests.ModifyAddressBookEntriesTest" />
+			<class name="tutorialsNinjaTests.NewsLetterSubscriptionTest" />
+			<class name="tutorialsNinjaTests.RegisterTest" />
+			<class name="tutorialsNinjaTests.WishListTest" />
+			<class name="tutorialsNinjaTests.ComparisionOfProductsTest" />
+			<class name="tutorialsNinjaTests.AddProductToCartTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
+
+
